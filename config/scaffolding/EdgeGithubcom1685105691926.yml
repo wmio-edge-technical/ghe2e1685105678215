@@ -1,0 +1,24 @@
+version: "1.0"
+info:
+  model: int-scaffold
+configurationVariables:
+  jdbc.sqls.snoopenabled: "false"
+  jdbc.sqls.spyenabled: "false"
+  jdbc.sqls.maxConns: "10"
+  jdbc.sqls.dbURL: jdbc:mysql://mysql.local:3306/isinternal
+  jdbc.sqls.waitingThread: "0"
+  jdbc.sqls.driverAlias: MySQL Database Java Connector Driver
+  jdbc.sqls.minConns: "0"
+  jdbc.sqls.poolThreshold: "0"
+  jdbc.sqls.userid: root
+  jdbc.sqls.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/sqls.log;ddtdbg.ProtocolTraceShowTime=true
+  jdbc.sqls.spyparms: SpyAttributes=(log=(file)logs/spy/sqls.log;logTName=yes;timestamp=yes)
+  jdbc.sqls.expireTime: "60000"
+  jdbc.sqls.password: "{AES}er+I3U8nDVm8F4DBRST1+A=="
+packages:
+- name: EdgeGithubcom1685105691926
+  gitServerName: ghe2e1685105678215
+  gitUrl: https://github.com/wmio-edge-technical/ghe2e1685105678215
+  gitUsername: wmio-edge-technical
+  gitToken: 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
+  gitBranch: master
